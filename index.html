@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.cs.cmu.edu/~aharley/rvl-cdip/ -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<style>
+		td,
+		th {
+			background: #f0f0f0;
+			text-align: center;
+		}
+
+		#labels {
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 1.5em;
+			z-index: 5;
+		}
+
+		.label {
+			float: left;
+			width: 12.5%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.twoline {
+			line-height: 1em;
+			margin-top: -0.75em;
+			padding-bottom: 0.5em;
+		}
+
+		.trt{
+			font-size: 10%;
+			line-height: 15px;
+		}
+	</style>
+	<link href="./TableBank Dataset_files/projectPage.css" rel="stylesheet" type="text/css">
+	<script async="" src="./TableBank Dataset_files/analytics.js"></script>
+	<script async="" src="./TableBank Dataset_files/analytics.js"></script>
+	<script type="text/javascript" src="./TableBank Dataset_files/jquery-1.11.1.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131758570-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131758570-2');
+	</script>
+
+	<link href="./TableBank Dataset_files/css" rel="stylesheet" type="text/css">
+	<title>TableBank Dataset</title>
+</head>
+
+<body>
+	<div id="container">
+		<div id="page">
+			<div id="pageContent">
+				<h1>The TableBank Dataset</h1>
+				<p>Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, Ming Zhou, Zhoujun Li</p>
+				<p>TableBank is a new image-based table detection and recognition dataset built with novel weak
+					supervision from Word and Latex documents on the internet, contains 417K high-quality labeled
+					tables.
+				</p>
+				<p>Here are Example annotations of the TableBank. </p>
+				<h4>Table Detection Task</h4>
+				<table>
+					<tr>
+						<td>
+							<a><img src="./sample_imgs/001.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/002.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/003.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/004.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/005.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/006.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/007.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/008.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+					</tr>
+				</table>
+				
+				<h4>Table Recognition Task</h4>
+				<style>
+					
+				</style>
+				<table>
+					<tr>
+						<td>
+							<a><img src="./sample_imgs/r001.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/r002.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/r003.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/r004.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<!-- <td>
+							<a><img src="./sample_imgs/005.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/006.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/007.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td>
+						<td>
+							<a><img src="./sample_imgs/008.png" style="width:100%; height:auto; max-width:3540px; "></a>
+						</td> -->
+					</tr>
+					<tr class="trt">
+						<td>&lt;tabular> &lt;thead> &lt;tr> &lt;tdn> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/tbody> &lt;/tabular>
+						</td>
+						<td>&lt;tabular> &lt;thead> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdn> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdn> &lt;/tr> &lt;/tbody> &lt;/tabular>
+						</td>
+						<td>&lt;tabular> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/tbody> &lt;/tabular>
+						</td>
+						<td>&lt;tabular> &lt;thead> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/tbody> &lt;/tabular>
+						</td>
+					</tr>
+				</table>
+
+				<p> A new benchmark dataset DocBank (<a href="https://github.com/doc-analysis/DocBank">repo</a>, <a
+						href="https://arxiv.org/abs/2006.01038">paper</a>) is now available for document layout
+					analysis. <br>
+					Our paper has been accepted in <a
+						href="https://lrec2020.lrec-conf.org/en/conference-programme/accepted-papers/">LREC 2020</a>.
+				</p>
+				<h2>Download</h2>
+				<table width="100%">
+					<tbody>
+						<tr>
+							<th>File</th>
+							<th>Size</th>
+							<th>md5sum</th>
+						</tr>
+
+						<tr>
+							<td><a
+									href="https://buaaeducn-my.sharepoint.com/:f:/g/personal/liminghao1630_buaa_edu_cn/EotyQfwlhYlGuZAv9_92b3oBHUg7jd90ZvhCkXcxfORtcQ?e=pMOi9R">TableBank.zip</a>
+							</td>
+							<td>24,965,393,207B (23.2GB)</td>
+							<td> - </td>
+						</tr>
+					</tbody>
+				</table>
+				<h2>Annotation Format
+				</h2>
+				<p>The annotation of the Table Detection task uses the format of the MS COCO dataset. For specific
+					format information, please refer to the website: <a
+						href="https://cocodataset.org/#format-data">https://cocodataset.org/#format-data</a>. In
+					addition, our data annotations can be loaded through <a
+						href="https://github.com/cocodataset/cocoapi">COCO API</a>. 
+				</p>
+
+				<p>
+					The annotation of the Table Recognition task is HTML tag sequences. The tags are &lt;tabular>,
+					&lt;/tabular>, &lt;thead>, &lt;/thead>, &lt;tbody>, &lt;/tbody>, &lt;tr>, &lt;/tr>, &lt;td>,
+					&lt;/td>, &lt;tdy>, &lt;tdn>.
+
+				</p>
+
+				<h2>Citation</h2>
+				<p>If you use this dataset, please cite our <a href="https://arxiv.org/abs/1903.01949">paper</a>:
+				</p>
+				<div class="cite">
+					<p>TableBank: A Benchmark Dataset for Table Detection and Recognition</p>
+					<p>Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, Ming Zhou, Zhoujun Li</p>
+				</div>
+				<p>Bibtex format:</p>
+				<div class="cite">
+					<code>
+						@misc{li2019tablebank,<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;title={TableBank: A Benchmark Dataset for Table Detection and Recognition},<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;author={Minghao Li and Lei Cui and Shaohan Huang and Furu Wei and Ming Zhou and Zhoujun Li},<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;year={2019},<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;eprint={1903.01949},<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;archivePrefix={arXiv},<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;primaryClass={cs.CV}<br>
+						}						      
+	    			</code>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
