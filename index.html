@@ -126,37 +126,6 @@
 					</tr>
 				</table>
 				
-				<!-- <h4>Table Recognition Task</h4>
-				<style>
-					
-				</style>
-				<table>
-					<tr>
-						<td>
-							<a><img src="./sample_imgs/r001.png" style="width:100%; height:auto; max-width:3540px; "></a>
-						</td>
-						<td>
-							<a><img src="./sample_imgs/r002.png" style="width:100%; height:auto; max-width:3540px; "></a>
-						</td>
-						<td>
-							<a><img src="./sample_imgs/r003.png" style="width:100%; height:auto; max-width:3540px; "></a>
-						</td>
-						<td>
-							<a><img src="./sample_imgs/r004.png" style="width:100%; height:auto; max-width:3540px; "></a>
-						</td>						
-					</tr>
-					<tr class="trt">
-						<td>&lt;tabular> &lt;thead> &lt;tr> &lt;tdn> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/tbody> &lt;/tabular>
-						</td>
-						<td>&lt;tabular> &lt;thead> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdn> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;tdn> &lt;/tr> &lt;/tbody> &lt;/tabular>
-						</td>
-						<td>&lt;tabular> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/tbody> &lt;/tabular>
-						</td>
-						<td>&lt;tabular> &lt;thead> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;tr> &lt;tdy> &lt;tdy> &lt;tdy> &lt;/tr> &lt;/tbody> &lt;/tabular>
-						</td>
-					</tr>
-				</table> -->
-
 				<p> A new benchmark dataset DocBank (<a href="https://github.com/doc-analysis/DocBank">repo</a>, <a
 						href="https://arxiv.org/abs/2006.01038">paper</a>) is now available for document layout
 					analysis. <br>
@@ -165,6 +134,71 @@
 					For more details, please refer to our GitHub page: <a href="https://github.com/doc-analysis/TableBank">https://github.com/doc-analysis/TableBank</a>.
 					
 				</p>
+
+				<h2>Statistics on Train/Val/Test sets</h2>
+				<h3>Table Detection</h3>
+				<table>
+					<thead>
+					  <tr>
+						<th>Source</th>
+						<th>Train</th>
+						<th>Val</th>
+						<th>Test</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Latex</td>
+						<td>187199</td>
+						<td>7265</td>
+						<td>5719</td>
+					  </tr>
+					  <tr>
+						<td>Word</td>
+						<td>73383</td>
+						<td>2735</td>
+						<td>2281</td>
+					  </tr>
+					  <tr>
+						<td>Total</td>
+						<td>260582</td>
+						<td>10000</td>
+						<td>8000</td>
+					  </tr>
+					</tbody>
+					</table>
+				<h3>Table Structure Recognition</h3>
+				<table>
+					<thead>
+					  <tr>
+						<th>Source</th>
+						<th>Train</th>
+						<th>Val</th>
+						<th>Test</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Latex</td>
+						<td>79486</td>
+						<td>6075</td>
+						<td>3036</td>
+					  </tr>
+					  <tr>
+						<td>Word</td>
+						<td>50977</td>
+						<td>3925</td>
+						<td>1964</td>
+					  </tr>
+					  <tr>
+						<td>Total</td>
+						<td>130463</td>
+						<td>10000</td>
+						<td>5000</td>
+					  </tr>
+					</tbody>
+					</table>
+
 				<h2>Download</h2>
 				<table width="100%">
 					<tbody>
